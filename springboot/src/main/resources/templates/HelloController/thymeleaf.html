@@ -3,10 +3,26 @@
   xmlns:th="http://www.thymeleaf.org"
   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
   layout:decorator="layout">
+<head>
+  <title>a page </title>
+  <meta name="description" content="ページ固有の情報を thymeleaf の layout に適用する方法 " />
+
+<style type="text/css">
+  h1
+  {
+    text-align: left;  
+  }
+</style>
+</head>
 <body>
   <div layout:fragment="content">
         <h1>using template ending Thymeleaf </h1>
         <p class="lead"><span th:text="${message}">param1 content</span></p>
+  </div>
+  <div layout:fragment="moreScripts">
+    <script type="text/javascript">
+      alert("exec moreScripts !!");
+    </script>
   </div>
 </body>
 </html>

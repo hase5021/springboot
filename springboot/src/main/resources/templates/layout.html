@@ -9,7 +9,7 @@ xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
     <meta name="description" content="" />
     <meta name="author" content="" />
 
-    <title>Starter Template for Bootstrap</title>
+    <title layout:title-pattern="$CONTENT_TITLE - $DECORATOR_TITLE">Starter Template for Bootstrap</title> 
 
     <!-- Bootstrap core CSS -->
     <link href="/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -60,6 +60,8 @@ xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
     </div><!-- /.container -->
 
 
+    <div layout:fragment="beforejQuery" th:remove="tag">
+    </div>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
@@ -67,5 +69,7 @@ xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
     <script src="/bootstrap/js/bootstrap.min.js"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+    <div layout:fragment="moreScripts" th:remove="tag">
+    </div>
   </body>
 </html>
