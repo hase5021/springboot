@@ -67,4 +67,9 @@ public class SbAdmin2Controller {
 	public ModelAndView tables() {
 		return new ModelAndView("SbAdmin2Controller/tables" );
 	}
+	
+	@RequestMapping("/typography.html")
+	public ModelAndView typography() {
+		return new ModelAndView("SbAdmin2Controller/typography" );
+	}
 }
