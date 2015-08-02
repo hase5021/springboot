@@ -35,7 +35,12 @@ public class SbAdmin2Controller {
 
 	@RequestMapping("/grid.html")
 	public ModelAndView grid() {
-		return new ModelAndView("SbAdmin2Controller/grid	");
+		return new ModelAndView("SbAdmin2Controller/grid");
+	}
+
+	@RequestMapping("/icons.html")
+	public ModelAndView icons() {
+		return new ModelAndView("SbAdmin2Controller/icons" );
 	}
 
 }
