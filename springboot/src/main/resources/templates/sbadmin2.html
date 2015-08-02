@@ -387,6 +387,8 @@ xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
     <!-- Metis Menu Plugin JavaScript -->
     <script th:src="@{/sbadmin2/bower_components/metisMenu/metisMenu.min.js}"></script>
 
+    <div layout:fragment="moreScripts" th:remove="tag"></div>
+    
     <!-- Custom Theme JavaScript -->
     <script th:src="@{/sbadmin2/js/sb-admin-2.js}"></script>
 
