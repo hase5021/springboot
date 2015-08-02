@@ -33,4 +33,9 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/forms");
 	}
 
+	@RequestMapping("/grid.html")
+	public ModelAndView grid() {
+		return new ModelAndView("SbAdmin2Controller/grid	");
+	}
+
 }
