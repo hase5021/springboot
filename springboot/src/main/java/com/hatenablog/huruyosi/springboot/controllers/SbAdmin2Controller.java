@@ -22,4 +22,10 @@ public class SbAdmin2Controller {
 	public ModelAndView blank() {
 		return new ModelAndView("SbAdmin2Controller/blank");
 	}
+
+	@RequestMapping("/flot.html")
+	public ModelAndView flat() {
+		return new ModelAndView("SbAdmin2Controller/flot");
+	}
+
 }
