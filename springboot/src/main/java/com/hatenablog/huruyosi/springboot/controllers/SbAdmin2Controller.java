@@ -48,4 +48,8 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/login" );
 	}
 	
+	@RequestMapping("/morris.html")
+	public ModelAndView morris() {
+		return new ModelAndView("SbAdmin2Controller/morris" );
+	}
 }
