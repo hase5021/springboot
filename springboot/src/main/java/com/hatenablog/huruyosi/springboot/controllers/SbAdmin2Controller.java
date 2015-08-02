@@ -43,4 +43,9 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/icons" );
 	}
 
+	@RequestMapping("/login.html")
+	public ModelAndView login() {
+		return new ModelAndView("SbAdmin2Controller/login" );
+	}
+	
 }
