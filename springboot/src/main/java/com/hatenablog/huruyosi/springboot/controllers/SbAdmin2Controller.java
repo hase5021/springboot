@@ -63,4 +63,8 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/panels-wells" );
 	}
 
+	@RequestMapping("/tables.html")
+	public ModelAndView tables() {
+		return new ModelAndView("SbAdmin2Controller/tables" );
+	}
 }
