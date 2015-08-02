@@ -28,4 +28,9 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/flot");
 	}
 
+	@RequestMapping("/forms.html")
+	public ModelAndView forms() {
+		return new ModelAndView("SbAdmin2Controller/forms");
+	}
+
 }
