@@ -52,4 +52,9 @@ public class SbAdmin2Controller {
 	public ModelAndView morris() {
 		return new ModelAndView("SbAdmin2Controller/morris" );
 	}
+	
+	@RequestMapping("/notifications.html")
+	public ModelAndView notifications() {
+		return new ModelAndView("SbAdmin2Controller/notifications" );
+	}
 }
