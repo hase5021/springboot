@@ -13,6 +13,11 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/index");
 	}
 
+	@RequestMapping("/buttons.html")
+	public ModelAndView buttons() {
+		return new ModelAndView("SbAdmin2Controller/buttons");
+	}
+	
 	@RequestMapping("/blank.html")
 	public ModelAndView blank() {
 		return new ModelAndView("SbAdmin2Controller/blank");
