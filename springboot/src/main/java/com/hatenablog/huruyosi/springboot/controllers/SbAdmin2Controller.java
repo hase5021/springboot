@@ -57,4 +57,10 @@ public class SbAdmin2Controller {
 	public ModelAndView notifications() {
 		return new ModelAndView("SbAdmin2Controller/notifications" );
 	}
+	
+	@RequestMapping("/panels-wells.html")
+	public ModelAndView panelsWells() {
+		return new ModelAndView("SbAdmin2Controller/panels-wells" );
+	}
+
 }
