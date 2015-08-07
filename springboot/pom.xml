@@ -41,6 +41,12 @@
 			<artifactId>thymeleaf-layout-dialect</artifactId>
 		</dependency>
 		
+		<!-- hop deply -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>springloaded</artifactId>
+		</dependency>
+		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
