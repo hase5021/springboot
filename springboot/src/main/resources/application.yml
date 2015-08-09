@@ -1,6 +1,9 @@
 spring:
   profiles.active: dev
   
+  secuirt:
+    basic.enable: false
+
   datasource:
     url: jdbc:h2:mem:sbadmin2;MODE=MYSQL
     username: sa
