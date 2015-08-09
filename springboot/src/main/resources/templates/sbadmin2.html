@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en"
 xmlns:th="http://www.thymeleaf.org" 
-xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity4">
 
 <head>
 
@@ -290,10 +291,10 @@ xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
                             </ul>
                             <!-- /.nav-second-level -->
                         </li>
-                        <li>
+                        <li sec:authorize="hasRole('ROLE_ADMIN')">
                             <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
                         </li>
-                        <li>
+                        <li sec:authorize="hasRole('ROLE_STAFF')">
                             <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
                         </li>
                         <li>

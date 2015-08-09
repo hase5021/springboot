@@ -1,11 +1,13 @@
 package com.hatenablog.huruyosi.springboot.controllers;
 
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/sbadmin2/")
+@Secured("IS_AUTHENTICATED_FULLY")
 public class SbAdmin2Controller {
 
 	@RequestMapping("/index.html")
@@ -28,6 +30,7 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/flot");
 	}
 
+	@Secured("ROLE_STAFF")
 	@RequestMapping("/forms.html")
 	public ModelAndView forms() {
 		return new ModelAndView("SbAdmin2Controller/forms");
@@ -63,6 +66,7 @@ public class SbAdmin2Controller {
 		return new ModelAndView("SbAdmin2Controller/panels-wells" );
 	}
 
+	@Secured({"ROLE_ADMIN"})
 	@RequestMapping("/tables.html")
 	public ModelAndView tables() {
 		return new ModelAndView("SbAdmin2Controller/tables" );
