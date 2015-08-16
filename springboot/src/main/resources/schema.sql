@@ -14,3 +14,11 @@ create table authorities (
   FOREIGN KEY (user_id) REFERENCES users(user_id)
 );
 
+
+-- remember me 認証
+create table persistent_logins(
+  username varchar(64) not null,
+  series varchar(64) primary key, 
+  token varchar(64) not null,
+  last_used timestamp not null
+);

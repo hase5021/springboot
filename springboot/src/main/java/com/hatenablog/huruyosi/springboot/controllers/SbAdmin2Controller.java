@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/sbadmin2/")
-@Secured("IS_AUTHENTICATED_FULLY")
+@Secured("IS_AUTHENTICATED_REMEMBERED")
 public class SbAdmin2Controller {
 
 	@RequestMapping("/index.html")
